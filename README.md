@@ -25,7 +25,7 @@ A modern and responsive Gym Website built using HTML, Tailwind CSS, and JavaScri
 1. Clone the repository:
 
    bash
-   git clone https://github.com/yourusername/gym-website.git
+   git clone  https://github.com/Shafaque1perween/gym-web.git
    
 
 2. Open the project folder.

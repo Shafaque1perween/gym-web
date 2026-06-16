@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+     <script src="https://unpkg.com/scrollreveal@4"></script>
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="bg-white p-3 sm:p-0 ">
+
+    <!--navbar-->
+     <nav class=" lg:sticky p-3 flex justify-between items-center text-center bg-black " id="nav">
+
+        <div >
+            <a class="flex justify-center flex-1">
+              <img class="h-12 w-12 lg:h-16 lg:w-16" src="https://i.pinimg.com/originals/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="">
+              <h1 class="font-bold text-2xl mt-1 lg:text-3xl text-white">Fit<span class="text-green-600">Pro</span></h1>
+              </a>
+        </div>
+
+        <div class="hidden lg:flex md:justify-between gap-6 ml-50 ">
+           <a href="#home" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3 hover:font-semibold transition">Home</a>
+           <a href="#About-lg" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3">About</a>
+           <a href="#services" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3">Services</a>
+           <a href="#sucess" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3">Success Stories</a>
+           <a href="#pricing" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3">Pricing</a>
+           <a href="#contact" class="text-white font-semibold hover:text-green-600 hover:border-b-2 px-3">Contact</a>
+        </div>
+
+        <div class="flex justify-end flex-1 ">
+            <button class="hidden lg:flex text-white font-medium bg-green-600 px-4 py-2 rounded-lg hover:bg-green-800">Book Free Consultant</button>
+        </div>
+
+        
+            <button class="mr-2 lg:hidden" onclick="handleCard()">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>  
+            
+            <div id="nav-log" class="hidden fixed z-10 bg-white inset-0 p-3  lg:hidden w-full h-full">
+                <div class="bg-black p-3">
+                <div id="nav-bar" class="flex justify-between">
+                     <a class="flex items-center">
+                        <img class="h-12 w-12 lg:h-16 lg:w-16" src="https://i.pinimg.com/originals/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="">
+                         <h1 class="font-bold text-2xl mt-1 lg:text-3xl text-white">Fit<span class="text-green-600">Pro</span></h1>
+                      </a>
+                      <button class="mr-2 lg:hidden" onclick="handleCard()">
+                           <i class="fa-solid fa-xmark text-white"></i>
+                       </button>  
+
+                 </div>
+                       <div class="mt-6 flex flex-col">
+                         <a href="#home" class= " text-white font-semibold hover:text-green-600 hover:bg-slate-800 p-2 hover:border-2xl">Home</a>
+                         <a href="#About" class="text-white font-semibold hover:text-green-600  hover:bg-slate-800 p-2 hover:border-2xl">About</a>
+                         <a href="#services" class="text-white font-semibold hover:text-green-600  hover:bg-slate-800 p-2 hover:border-2xl">Services</a>
+                          <a href="#sucess" class="text-white font-semibold hover:text-green-600  hover:bg-slate-800 p-2 hover:border-2xl">Success Stories</a>
+                         <a href="#pricing" class="text-white font-semibold hover:text-green-600  hover:bg-slate-800 p-2 hover:border-2xl">Pricing</a>
+                         <a href="#contact" class="text-white font-semibold hover:text-green-600  hover:bg-slate-800 p-2 hover:border-2xl">Contact</a>
+                       </div>
+
+                       <div class="h-[1px] bg-green-800 mt-8"></div>
+                       
+                        <button class="mt-8 text-white font-medium bg-green-600 px-29 py-3 rounded-lg hover:bg-green-800">Book Free Consultant</button>
+
+            </div>
+               
+
+            </div>
+       
+
+
+     
+
+     </nav>
+     <!--hero-section-->
+     <main class="h-fit" id="home">
+        <div class="flex flex-col p-3 h-fit bg-black  sm:bg-[url(./photo/hero.jpg)]  sm:bg-cover sm:pl-20 px-6 py-2  gap-4 sm:px-8 sm:py-4 sm:gap-8">
+           
+                <div class="flex items-center text-center w-fit border-2  rounded-full bg-slate-800 py-2 px-4 mt-6 ">
+                     <i class="fa-solid fa-lightbulb text-green-600"></i>
+                    <p class="text-sm text-green-600 font-semibold"></i>PERSONL FITNESS TRINER</p>
+               </div>
+                <div class="flex flex-col mt-6  ">
+                    <h1 class="text-white font-bold text-3xl leading-snug sm:text-4xl">Transform Your <br> Body, <span class="text-green-600">Transform <br> Your Life</span></h1>
+                    <p class="text-white text-l mt-6 leading-snug sm:text-xl line-clamp-3 sm:line-clamp-none" >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         <br>Cum magnam temporibus corrupti exercitationem ut. <br> 
+                         dolorum maxime vero sed voluptatem dolorem amet, 
+                         <br>. Quia, quae ex. Ipsum Sed maxime non est iusto reiciendis 
+                         <br> similique commodi temporibus non deleniti, ex voluptas 
+                         <br>iusto quibusdam praesentium culpa sapiente accusamus eos.</p>
+               
+                         
+                 
+                 <button class="mt-8 text-white font-medium bg-green-600 w-fit px-4 py-2 rounded-lg hover:bg-green-800">Book Free Consultant
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+                 </button>
+
+                  </div>
+
+                 <div class="flex flex-col text-white sm:flex-row sm:gap-3 mt-3 gap-4 mb-8">
+                 <div class="flex   gap-[-2] h-auto mt-1 ">  
+                    <img class="h-10 w-10 rounded-full border-white border-3 border-r-0 mr-[-6px]" src="./photo/men2.jpg" alt="">
+                    <img class="h-10 w-10 rounded-full border-white border-3 border-r-0 mr-[-6px] " src="./photo/men3.jpg" alt="">
+                    <img class="h-10 w-10 rounded-full  border-white border-3 border-r-0 mr-[-6px] " src="./photo/men1.jpg" alt="">
+                    <img class="h-10 w-10 rounded-full  border-white border-3 " src="./photo/men4.avif" alt="">
+                  </div>
+                    <div class="flex flex-col gap-1  ">
+                    <h2 class="font-semibold">100+ Happy Clients</h2>
+                    <p class="text-gray-400">achieved by their fitness goals</p>
+                    </div>
+
+                 </div>
+                 </div>
+         </div>
+     </main>
+
+     <!--About section-->
+     <!--mobile -->
+
+    <section class="sm:hidden bg-slate-50 h-fit p-3 shadow-lg" id="About">
+        <div class=" flex flex-col justify-between mt-2 px-6 py-4 gap-5 ">
+            <h1 class="font-bold text-4xl ">About Me</h1>
+            <img class="w-full h-72 rounded-2xl" src="./photo/men1.jpg" alt="">
+            <p class="font-semibold text-lg mt-4 leading-loose line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium autem velit c
+                orrupti dolorem perspiciatis optio labore nesciunt ducimus quas,
+                 provident nulla suscipit maxime nostrum, amet accusamus libero 
+                 vitae excepturi repudiandae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, temporibus nihil? Officia, provident? Impedit libero nam quod, corrupti expedita vitae distinctio aspernatur! Hic harum eos cum doloribus quidem impedit officiis.
+                 Perspiciatis placeat quidem dignissimos velit ab doloribus, fugit libero ipsa tempore expedita soluta quis ad tempora voluptatem saepe sit vel minus dicta! Et impedit consequuntur culpa nam adipisci! Rerum, animi..</p>
+
+        
+              <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">VCE Certified Personal Trainer</h3>
+              </div>
+              <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">Nutrition Coach Certification </h3>
+              </div>
+              <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">7+ years of Experience</h3>
+              </div>
+               <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">500+ Clients Transformation</h3>
+              </div>
+        </div>
+         </section>
+  <!--lg-version-->
+
+<section id="About-lg">
+  <div class="hidden  sm:flex flex-row bg-white w-full justify-center h-full ">
+    <div class=" flex mt-6  lg:w-[75%] justify-around gap-20 sm:gap-25 md:gap-35   sm:p-6 sm:w[90%] mb-6">
+    <div class=" w-[30%] h-full">
+        <img class="h-92 w-62 rounded-xl" src="./photo/men3.jpg" alt="">
+        <div class="h-25 w-40 px-2 py-6 bg-green-500 sm:text-center font-bold lg:ml-40 md:mt-[-40px] md:ml-20 sm:mt-[-40px] opacity-45 text-sm">7+ <span class="font-medium  "><br>Years Of Experience</span></div>
+    </div>
+    <div class="w-[70%] h-full gap-3">
+        <h3 class="font-semibold text-sm text-green-600">ABOUT ME</h3>
+        <h1 class="font-bold text-4xl mt-4 ">Helping You Become <br> Stronger Every Day</h1>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, cumque illo minima provident natus adipisci ducimus deserunt dolores dignissimos accusantium iusto quaerat possimus dolorem ab exercitationem..
+        </p>
+
+        <p class="mt-2">Nobis culpa, magnam illum ducimus pariatur veniam. Ab consectetur ea accusamus delectus a atque, sunt eaque ut dignissimos! Adipisci doloribus vitae veritatis. Animi cupiditate error enim in quis dolor explicabo.</p>
+        <div class="mt-6 ">
+        <div class="flex flex-row gap-3 ">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">VCE Certified Personal Trainer</h3>
+              </div>
+              <div class="flex flex-row gap-3 mt-2">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">Nutrition Coach Certification </h3>
+              </div>
+              <div class="flex flex-row gap-3  mt-2">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">7+ years of Experience</h3>
+              </div>
+               <div class="flex flex-row gap-3  mt-2">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class="font-semibold text-md">500+ Clients Transformation</h3>
+              </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+            
+    </section>
+
+    <!--MY SERVICES-->
+
+    <section class=" p-3 shadow-lg flex flex-col sm:bg-gray-50" id="services">
+    <div class="flex flex-col  py-4 sm:flex sm:justify-center sm:items-center sm:text-center ">
+       
+            <h1 class="text-2xl font-bold md:text-lg sm:font-semibold sm:text-green-600"> MY SERVICES</h1>
+           
+       </div>
+       <div class="hidden sm:flex sm:text-center sm:justify-center sm:items-center">
+         <h2 class=" text-3xl font-bold ">Programme Design For Your Goals</h2>
+       </div>
+
+      
+        <!--lg-version services -->
+        <section class="hidden sm:flex bg-slate-50">
+            <div class="flex justify-center items-center gap-12 w-full  px-6 py-4 mt-3 ">
+                <div class="sm:flex flex-col h-70 md:[35%] sm:w-[60%] bg-white shadow-lg rounded-xl gap-3 ">
+                    <div class="bg-green-200 rounded-full flex justify-center items-center  mx-10 mt-5 w-fit h-fit px-4 py-4">
+                        <a><i class="fa-solid fa-leaf text-green-600"></i></a>
+                        
+                    </div>
+                    <div class="  px-6 py-2">
+                        <h1 class="text-lg font-bold">Weight Loss Programme</h1>
+                        <p class="text-sm mt-3  py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat tempora veniam quod illo possimus, quis reiciendis veritatis, deleniti tempo.</p>
+                         <a class="text-green-600 text-lg  font-semibold gap-3 mt-2 hidden sm:flex" href="#">learn More<i class=" mt-2 fa-solid fa-arrow-right"></i></a> 
+                   </div>
+                   </div>
+                <div class=" hidden md:flex flex-col h-70 md:[35%] sm:w-[60%] bg-white shadow-lg rounded-xl gap-3">
+
+                     <div class="bg-green-200 rounded-full flex justify-center items-center  mx-10 mt-5 w-fit h-fit px-4 py-4">
+                        <a><i class="fa-solid fa-dumbbell text-green-600"></i></a>
+                        
+                    </div>
+                    <div class="px-6 py-2 mb-4">
+                        <h1 class="text-lg font-bold">Muscules Build Programme</h1>
+                        <p class="text-sm mt-3  py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat tempora veniam quod illo possimus, quis reiciendis veritatis, deleniti tempo.</p>
+                         <a class="text-green-600 text-lg  font-semibold gap-3 mt-2 hidden sm:flex" href="#">learn More<i class=" mt-2 fa-solid fa-arrow-right"></i></a> 
+                   </div>
+
+                </div>
+                <div class="hidden lg:flex flex-col h-70 md:[35%] sm:w-[60%]  bg-white shadow-lg rounded-xl gap-3">
+
+                        <div class="bg-green-200 rounded-full flex justify-center items-center  mx-10 mt-5 w-fit h-fit px-4 py-4">
+                        <a><i class="fa-solid fa-laptop-code text-green-600"></i></a>
+                        
+                    </div>
+                    <div class="px-6 py-2">
+                        <h1 class="text-lg font-bold">Weight Loss Programme</h1>
+                        <p class="text-sm mt-3  py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellat tempora veniam quod illo possimus, quis reiciendis veritatis, deleniti tempo.</p>
+                         <a class="text-green-600 text-lg font-semibold gap-3 mt-2 hidden sm:flex" href="#">learn More<i class=" mt-2 fa-solid fa-arrow-right"></i></a> 
+                   </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+         <!--lg-version services end-->
+
+      
+        <div class="sm:hidden w-full h-30  bg-white shadow-2xl flex justify-center mt-6 items-center  px-6 py-6 rounded-2xl gap-3  "> 
+            
+            <div class="bg-green-200 rounded-full flex  items-center  mx-3 mt-2 w-fit h-fit px-4 py-4">
+                        <a><i class="fa-solid fa-leaf text-green-600"></i></a>
+                        
+             </div>
+            <div class="w-[80%] gap-3 ">
+                  <h1 class="font-bold text-lg">Weight Loss Programe</h1> 
+                  <p class="mt-2">perspiciatis optio labore nesciunt ducimus quas nesciunt ducimus quas</p>
+                 
+             </div>                 
+        </div>
+        <div class=" sm:hidden w-full h-30  bg-white shadow-2xl flex justify-center mt-6 items-center  px-6 py-6 rounded-2xl gap-3  "> 
+          
+              <div class="bg-green-200 rounded-full flex  items-center  mx-3 mt-2 w-fit h-fit px-4 py-4">
+                        <a><i class="fa-solid fa-dumbbell text-green-600"></i></a>
+                        
+                    </div>
+            <div class="w-[80%] gap-3 ">
+                  <h1 class="font-bold text-lg"> Muscules Building Programme </h1> 
+                  <p class="mt-2">perspiciatis optio labore nesciunt ducimus quas nesciunt ducimus quas</p>
+                  <a class="text-green-600 text-xl font-semibold gap-3 mt-8 hidden sm:flex" href="#">learn More<i class=" mt-2 fa-solid fa-arrow-right"></i></a> 
+             </div>                 
+        </div>
+                     
+        
+
+       
+        <div class=" sm:hidden flex w-full h-30  bg-white shadow-2xl  justify-center mt-6 items-center  px-6 py-8 rounded-2xl gap-3"> 
+           
+             <div class="bg-green-200 rounded-full flex  items-center  mx-3 mt-2 w-fit h-fit px-4 py-4">
+                    <a><i class="fa-solid fa-laptop-code text-green-600"></i></a>
+             </div>
+            <div class="w-[80%] gap-3">
+                   <h1 class="font-bold text-l">Online Coaching</h1> 
+                  <p class="mt-2">perspiciatis optio labore nesciunt ducimus quas nesciunt ducimus quas,</p>
+             </div>                 
+
+                       
+        </div>
+        </div>    
+                 
+           
+           
+    </div>
+    </section>
+
+<!---succes stories-->
+    <section class="bg-white  p-3 shadow-lg flex flex-col " id="sucess">
+    
+        <div class="flex  mt-6 w-full sm:flex sm:justify-center sm:items-center sm:text-center">
+            <h1 class="text-2xl font-bold md:text-lg sm:font-semibold sm:text-green-600">Success Stories</h1>
+       </div>
+        <div class="sm:flex sm:text-center sm:justify-center sm:items-center  ">
+         <h2 class="hidden text-3xl font-bold md:flex">Real People,Real Transformation</h2>
+       </div>
+      
+
+       
+        <!--lg-version success storiess-->
+
+
+        <section class="hidden sm:flex">
+            <div class="flex justify-center items-center gap-12 w-full px-6 py-4 mt-3 ">
+                <div class="hidden sm:flex flex-col h-80 md:[35%] sm:w-[60%] lg:w-[25%] md:bg-white shadow-lg rounded-xl p-6 gap-3">
+                    <div>
+                        <a><i class="fa-solid fa-quote-left text-green-600"></i></a>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sse perspiciatis unde! Accusamus corporis pariatur quaerat dignissimos.</p>
+                    </div>
+                    <div class="flex flex-row gap-3 ">
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                     </div>
+                     <div class="w-full px-4 flex flex-row gap-3 mt-3" >
+                            <img class="h-12 w-12 rounded-full border-2 border-green-600 mt-2" src="./photo/men3.jpg" alt="">
+                          <div class="gap-1 mt-1">
+                                <h1 class="text-lg font-semibold ">Nikhil S.</h1>
+                                 <p class="">Lost 15kg</p>
+                            </div>
+                       </div>
+                    </div>
+                   
+
+                
+                <div class="hidden md:flex flex-col h-80 md:[35%] sm:w-[60%] lg:w-[25%] bg-white shadow-lg rounded-xl  p-6 gap-3">
+
+                     <div>
+                        <a><i class="fa-solid fa-quote-left text-green-600"></i></a>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sse perspiciatis unde! Accusamus corporis pariatur quaerat dignissimos.</p>
+                    </div>
+                    <div class="flex flex-row gap-3 ">
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                     </div>
+                     <div class="w-full px-4 flex flex-row gap-3 mt-3" >
+                            <img class="h-12 w-12 rounded-full border-2 border-green-600 mt-2" src="./photo/men3.jpg" alt="">
+                          <div class="gap-1 mt-1">
+                                <h1 class="text-lg font-semibold ">Nikhil S.</h1>
+                                 <p class="">Lost 15kg</p>
+                            </div>
+                       </div>
+
+                </div>
+                <div class="hidden lg:flex flex-col h-80 md:[35%] sm:w-[60%] lg:w-[25%] bg-white shadow-lg rounded-xl p-6 gap-3">
+
+                         <div>
+                        <a><i class="fa-solid fa-quote-left text-green-600"></i></a>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sse perspiciatis unde! Accusamus corporis pariatur quaerat dignissimos.</p>
+                    </div>
+                    <div class="flex flex-row gap-3 ">
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+                     </div>
+                     <div class="w-full px-4 flex flex-row gap-3 mt-3" >
+                            <img class="h-12 w-12 rounded-full border-2 border-green-600 mt-2" src="./photo/men3.jpg" alt="">
+                          <div class="gap-1 mt-1">
+                                <h1 class="text-lg font-semibold ">Nikhil S.</h1>
+                                 <p class="">Lost 15kg</p>
+                            </div>
+                       </div>
+
+                </div>
+            </div>
+
+        </section>
+
+       <!--lg-version success stories end-->
+ 
+      
+
+       <div class="sm:hidden flex justify-center items-center text-center mt-4 flex-col">
+         <div class="w-70 h-50 bg-white shadow-2xl flex- justify-center items-center  px-6 py-4 rounded-2xl gap-3"> 
+            <div class="w-full px-4 flex flex-row gap-3 mt-3" >
+                <img class="h-10 w-12 rounded-full border-2 border-green-600" src="./photo/men3.jpg" alt="">
+                <h1 class="text-lg font-bold mt-1 ">Nikhil S.</h1>
+            </div>
+            <div class="flex flex-row justify-center items-center gap-3 mt-3">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+            </div>
+            <div class="w-full mt-3 ">
+                  
+                  <p class="font-medium text-sm line-clamp-3">perspiciatis optio labore nesciunt ducimus quas nesciunt ducimus quas nesciunt ducimus quas,</p>
+             </div>  
+             
+             
+             <div>
+
+
+
+             </div>
+            
+
+                       
+       
+              </div>
+       </div>
+
+        <div class="flex flex-row justify-center items-center m-6 gap-2 sm:gap-6">   
+             
+             <div class="h-2 w-2 rounded-full bg-green-600"></div>
+                <div class="h-2 w-2 rounded-full bg-gray-500"></div>
+                <div class="h-2 w-2 rounded-full bg-gray-500"></div>
+             </div>
+
+
+
+           
+
+    
+</section>
+        
+       
+        
+       
+
+        <!--pricing plans -->
+
+        <section class=" bg-slate-50  p-3 shadow-lg flex flex-col gap-5  sm:bg-white lg:bg-white" id="pricing">
+   
+           <div class="flex  mt-6 w-full sm:flex sm:justify-center sm:items-center sm:text-center">
+            <h1 class="text-2xl font-bold md:text-lg sm:font-semibold sm:text-green-600">Pricing Plans</h1>
+           </div>
+            <div class="sm:flex sm:text-center sm:justify-center sm:items-center  ">
+         <h2 class="hidden text-3xl font-bold md:flex">Choose The Plans That Fits You</h2>
+            </div>
+
+    <div class="sm:flex sm:flex-row sm:justify-center sm:gap-9">
+       
+        <div class="flex  justify-center items-center ">
+            <div class="  flex-col w-80 h-90 bg-white shadow-2xl flex rounded-2xl gap-4 px-9 py-4"> 
+            
+                <h1  class="font-semibold text-lg">Basic Plan</h1>
+                <h2 class="font-bold text-xl">₹2,999<span class="font-semibold text-sm">/month</span></h2>
+                <p class="font-medium">Perfect For Beginer</p>
+           
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">4 Workouts/Months</h3>
+        </div>
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Diet Plan</h3>
+        </div>
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Email Support</h3>
+        </div>
+        <button class="font-medium text-lg border-2 border-green-600 px-4 py-2 rounded-xl mt-4">Get Started</button>
+            
+        </div>
+
+        </div>
+
+        
+        <div class="hidden md:flex  justify-center items-center">
+            <div class="  flex-col w-80 h-90 bg-white shadow-2xl flex rounded-2xl gap-4 px-9 py-4"> 
+            
+                <h1  class="font-semibold text-lg">Basic Plan</h1>
+                <h2 class="font-bold text-xl">₹2,999<span class="font-semibold text-sm">/month</span></h2>
+                <p class="font-medium">Perfect For Beginer</p>
+           
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">4 Workouts/Months</h3>
+        </div>
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Diet Plan</h3>
+        </div>
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Email Support</h3>
+        </div>
+        <button class="font-medium text-lg border-2 border-green-600 px-4 py-2 rounded-xl mt-4">Get Started</button>
+            
+        </div>
+
+        </div>
+
+        
+        <div class="hidden lg:flex  justify-center items-center">
+            <div class="  flex-col w-80 h-90 bg-white shadow-2xl flex rounded-2xl gap-4 px-9 py-4"> 
+            
+                <h1  class="font-semibold text-lg">Basic Plan</h1>
+                <h2 class="font-bold text-xl">₹2,999<span class="font-semibold text-sm">/month</span></h2>
+                <p class="font-medium">Perfect For Beginer</p>
+           
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">4 Workouts/Months</h3>
+        </div>
+
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Diet Plan</h3>
+        </div>
+        <div class="flex flex-row gap-3">
+               <i class="fa-solid fa-circle-check mt-2" style="color: rgb(95, 195, 79);"></i>
+              <h3 class=" text-sm mt-1">Email Support</h3>
+        </div>
+        <button class="font-medium text-lg border-2 border-green-600 px-4 py-2 rounded-xl mt-4">Get Started</button>
+            
+        </div>
+
+        </div>
+
+        
+
+
+        </div>
+        </section>
+
+        <!--Contact me-->
+        <section class=" bg-slate-50 h-fit p-3  shadow-lg" id="contact">
+            <div>
+                <div>
+                    <div class=" py-4 sm:flex sm:justify-center sm:items-center sm:text-center">
+                      <h1 class="font-bold text-2xl md:text-lg sm:font-semibold sm:text-green-600">Contact Me</h1> 
+                      </div>
+                       <div class="sm:flex sm:text-center sm:justify-center sm:items-center  ">
+                                <h2 class="hidden text-3xl font-bold sm:flex">Let's achieve Your Goals Together </h2>
+                       </div>
+
+                      
+
+
+                      <form action="" class=" flex md:hidden flex-col justify-center items-center w-full ">
+                        <input type="text" placeholder="Enter Your Name" required  class=" bg-white py-2 px-6 m-2 rounded-lg w-full">
+                        <input type="email" placeholder="Enter Your Email" required class=" bg-white py-2 px-6 m-2 rounded-lg w-full">
+                        <textarea name="" id="" placeholder="Your Message" class=" bg-white py-2 px-6 m-2 rounded-lg w-full h-50"></textarea>
+                       
+                      </form> 
+
+                      <button class="md:hidden mt-6 bg-green-600 text-center text-white py-3 rounded-xl boreder-2 w-full">Send Message<i class="fa-regular fa-paper-plane mt-1"></i></button>
+                       
+
+                   
+                </div>
+            </div>
+
+             <!--contact lg-->
+
+                       <div class="bg-slate-50 h-90 w-full hidden md:flex">
+                        <div class="flex justify-between items-center text-center gap-3 w-full h-full">
+                          <div class="flex-row w-[30%] h-full px-10">
+                                  <div class="w-full h-[30%] flex  px-6 py-4 gap-4">          
+                                <div class="flex text-center justify-center">
+                                    <a href="#" class="text-green-600 font-semibold text-lg mt-3"><i class="fa-solid fa-phone"></i></a>
+                                </div>
+                               <div class="flex flex-col">
+                                <h1 class="font-bold text-lg">Phone</h1>
+                                <p>+9876054345</p>
+                               </div>
+
+                                  </div>
+
+                                  <div class="w-full h-[30%] flex  px-6 py-4 gap-4">          
+                                <div class="flex text-center justify-center">
+                                    <a href="#" class="text-green-600 font-semibold text-lg mt-3"><i class="fa-solid fa-phone"></i></a>
+                                </div>
+                               <div class="flex flex-col">
+                                <h1 class="font-bold text-lg">Email</h1>
+                                <p>+9876054345</p>
+                               </div>
+
+                                 </div>
+                                  <div class="w-full h-[30%] flex  px-6 py-4 gap-4">          
+                                <div class="flex text-center justify-center">
+                                    <a href="#" class="text-green-600 font-semibold text-lg mt-3"><i class="fa-solid fa-phone"></i></a>
+                                </div>
+                               <div class="flex flex-col">
+                                <h1 class="font-bold text-lg">
+                                    Location
+                                </h1>
+                                <p>+9876054345</p>
+                               </div>
+
+                                  </div>
+
+                           </div>
+
+
+
+
+                            <div class="h-full w-[70%] flex">
+
+                                <div class="flex justify-start h-full px-6 py-4">
+
+                                    <div class="flex h-12 w-[60%]">
+                                         <input type="text" placeholder="Enter Your Name" required  class=" bg-white py-2 px-6 m-1  rounded-lg w-full">
+                                          <input type="email" placeholder="Enter Your Email" required class=" bg-white py-2 px-6 m-1 rounded-lg w-full">
+                                    </div>
+
+                                      <div class="w-[40%] h-full">
+                                         <textarea name="" id="" placeholder="Your Message" class=" bg-white py-2 px-6 m-1 rounded-lg w-full h-50"></textarea>
+                                         <button class="  mt-6 bg-green-600 text-white py-3 rounded-xl boreder-2 w-full text-center ">Send Message<i class="fa-regular fa-paper-plane mt-1"></i></button>
+                                     </div>
+
+                           
+                             </div>
+
+
+                                <div class="flex-row justify-between items-center hidden">
+
+                                    <div>
+                                     <form action="" class=" flex-col justify-center items-center w-full ">
+                                        <input type="text" placeholder="Enter Your Name" required  class=" bg-white py-2 px-6 m-2 rounded-lg w-full">
+                                         <input type="email" placeholder="Enter Your Email" required class=" bg-white py-2 px-6 m-2 rounded-lg w-full">
+
+                                         </form>
+                                    </div>
+
+
+                                         <div>
+                                         <textarea name="" id="" placeholder="Your Message" class=" bg-white py-2 px-6 m-2 rounded-lg w-full h-50"></textarea>
+                       
+                                     
+
+                                         <button class="  mt-6 bg-green-600 text-center text-white py-3 rounded-xl boreder-2 w-full">Send Message<i class="fa-regular fa-paper-plane mt-1"></i></button>
+                                         </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
+                       </div>
+                       <!--contactn lg end-->
+        </section>
+
+        <!--lg contat-->
+
+
+
+
+
+        <!--footer-->
+        <section class="flex sm:hidden bg-slate-50  flex-col" id="footer">
+            <div class="bg-black mt-6  px-6 py-4 gap-4 w-full">
+          
+        <div >
+               <a class="flex">
+              <img class="h-12 w-12 lg:h-16 lg:w-16" src="https://i.pinimg.com/originals/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="">
+              <h1 class="font-bold text-2xl mt-1 lg:text-3xl text-white">Fit<span class="text-green-600">Pro</span></h1>
+              </a>
+        </div>
+                <div>
+                    <h1 class="text-white px-4">@ 2024 FitPro All rights reserved <br>and your life</h1>
+                </div>
+               
+              <div class="text-white text-2xl px-3 gap-4 mt-6 flex">
+                <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                    <a><i class="fa-brands fa-instagram  gap-4 hover:text-green-600 "></i></a>
+                </div>
+                <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                    <a><i class="fa-brands fa-facebook-f gap-4 hover:text-green-600 "></i></a>
+                </div>
+                <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                    <a><i class="fa-brands fa-youtube gap-4 hover:text-green-600 "></i></a>
+                </div>
+                <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                    <a><i class="fa-brands fa-twitter gap-4 hover:text-green-600 "></i></a>
+                </div>
+                
+                                                                        
+                                                       
+
+              </div>
+              </div>
+          
+        </section>
+
+        <!--lg footer-->
+
+        <section >
+           <div class="hidden sm:flex justify-evenly  bg-black w-full h-60">
+                       <div class="flex flex-col gap-6 w-[20%] mt-8">
+                                  <div >
+                                        <a class="flex gap">
+                                        <img class="h-12 w-12 lg:h-16 lg:w-16" src="https://i.pinimg.com/originals/00/cd/8e/00cd8eabf948d596af53e10361a99928.jpg" alt="">
+                                        <h1 class="font-bold text-2xl mt-1 lg:text-3xl text-white">Fit<span class="text-green-600">Pro</span></h1>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-white">Helping You Transform Your Body<br> and Your Life</h1>
+                                    </div>
+                             
+
+                       </div>
+                       <div class="flex flex-col text-white gap-3 w-[20%] mt-8">
+                        <div>
+                            <h1 class="text-lg font-semibold">Quick Links</h1>
+                        </div>
+                        <div class=" flex flex-col gap-2">
+                            
+                             <a href="#" class=" hover:text-green-600">home</a>
+                           <a href="#" class=" hover:text-green-600">home</a>
+                           <a href="#" class=" hover:text-green-600">about</a>
+                           <a href="#" class=" hover:text-green-600">services</a>
+                           <a href="#" class=" hover:text-green-600">pricing</a>
+                           <a href="#" class=" hover:text-green-600">contact</a>
+                            
+                        </div>
+
+                       </div>
+                        <div class="flex flex-col text-white gap-2 w-[20%] mt-8">
+                        <div>
+                            <h1 class="text-lg font-semibold mb-3">Services</h1>
+                        </div>
+                        <div class="flex flex-col mt-4 gap-2">
+                           <a href="#" class=" hover:text-green-600">Weight Loss Programme </a>
+                           <a href="#" class=" hover:text-green-600"> Muscules Building Programme</a>
+                           <a href="#" class=" hover:text-green-600">online Coaching </a>
+                         
+                            
+                        </div>
+
+                       </div>
+                       <div class="w-[20%] text-white gap-4 flex flex-col mt-8">
+                        <div>
+                            <h1 class="text-lg font-semibold ">Follow Us</h1>
+                        </div> 
+                           <div class="text-2xl  gap-5 flex">
+                            <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                                <a><i class="fa-brands fa-instagram  gap-4  hover:text-green-600 "></i></a>
+                            </div>
+                            <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                                <a><i class="fa-brands fa-facebook-f gap-4  hover:text-green-600 "></i></a>
+                            </div>
+                            <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                                 <a><i class="fa-brands fa-youtube gap-4  hover:text-green-600 "></i></a>
+
+                            </div>
+                            <div class="boder-1 bg-slate-800 rounded-full w-10 h-10 flex justify-center items-center text-center">
+                                <a><i class="fa-brands fa-twitter   hover:text-green-600 "></i></a>
+                            </div>
+                                                                                         
+                           </div>
+
+
+
+                          
+                       </div>
+
+
+
+
+           </div>
+
+                <div class="flex justify-center items-center text-center bg-black w-full h-10 text-white">
+                    <h1 class="text-white px-4">@ 2024 FitPro All rights reserved and your life</h1>
+                </div>
+
+        </section>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

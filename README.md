@@ -34,7 +34,7 @@ A modern and responsive Gym Website built using HTML, Tailwind CSS, and JavaScri
 
 ## Live Demo
 
-gym-web-ivory-eta.vercel.app
+https://gym-web-ivory-eta.vercel.app/
 
 
 ## Author
